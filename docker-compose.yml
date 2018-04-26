@@ -1,0 +1,9 @@
+version: "3.4"
+services:
+  bazelcache:
+    build: ./nginx
+    image: bazel_cache
+    ports:
+      - 80:80
+#    volumes:
+#      - /home/jromero/dockerFiles/bazel:/bazel
